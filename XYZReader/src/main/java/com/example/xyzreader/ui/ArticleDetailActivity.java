@@ -39,7 +39,6 @@ public class ArticleDetailActivity extends AppCompatActivity
     private MyPagerAdapter mPagerAdapter;
     private View mUpButtonContainer;
     private View mUpButton;
-    private Toolbar mToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,10 +49,6 @@ public class ArticleDetailActivity extends AppCompatActivity
                             View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
         }
         setContentView(R.layout.activity_article_detail);
-
-        // Add toolbar to main screen
-        //setSupportActionBar(mToolbar);
-        //mToolbar = (Toolbar) findViewById(R.id.toolbar);
 
         getLoaderManager().initLoader(0, null, this);
 
