@@ -18,6 +18,15 @@ Redesign a mock RSS feed reader app, featuring banner photos and headlines, to f
 ## Why this Project
 This project gives you an opportunity to improve an app’s design, a vital skill for building apps users will love. It also replicates a common developer task of updating and changing an app's design as new standards are released.
 
+## Completed Project - MaterialDesign-Reader
+![](https://github.com/ellemwano/android-MaterialDesign-Reader/blob/master/pics/listsm.png)
+![](https://github.com/ellemwano/android-MaterialDesign-Reader/blob/master/pics/detailsm.png)
+
+- UI
+  * CoordinatorLayout
+  * CollapsingToolbarLayout
+  * FAB
+
 ## Learning objectives
 - Understand the fundamentals of Android design.
 - Apply Material Design guidelines to an mobile application.
