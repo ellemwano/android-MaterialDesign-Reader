@@ -244,8 +244,10 @@ public class ArticleDetailFragment extends Fragment implements
                                 + "</font>"));
 
             }
-            // FIXME regex single instances \r\n
-            Spanned bodyText = Html.fromHtml(mCursor.getString(ArticleLoader.Query.BODY).replaceAll("(\r\n|\n)", "<br />"));
+            /// FIXME regex keep multiple instances \r\n
+            Spanned bodyText = Html.fromHtml(mCursor.getString(ArticleLoader.Query.BODY).replaceAll("(\r\n){1}", " "));
+//            String bodyText = mCursor.getString(ArticleLoader.Query.BODY).replaceAll("[\r\n]{1}[\\s]*", " "); //OK removes blank paces and new lines, but replaces multiple lines too
+//            String bodyText = mCursor.getString(ArticleLoader.Query.BODY);
             bodyView.setText(bodyText);
             bodyViewFull.setText(bodyText);
             ImageLoaderHelper.getInstance(getActivity()).getImageLoader()
